@@ -1,0 +1,372 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zino Onomiwo</title>
+
+    <style>
+      /* Credit where credit is due, inspired by http://bettermotherfuckingwebsite.com/ */
+      body {
+        margin: 40px auto;
+        max-width: 650px;
+        line-height: 1.6;
+        font-size: 18px;
+        color: #444;
+        padding: 0 10px;
+        background: #eee;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.2;
+      }
+
+      img.profile {
+        border-radius: 100%;
+        width: 100%;
+      }
+
+      @media (max-width: 800px) {
+        .articles {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <img src="./img/kat.jpg" style="max-width: 300px" class="profile" />
+      <h1>Zino Onomiwo</h1>
+      <span>
+        <a href="https://www.linkedin.com/in/zino-onomiwo-6baa1550"
+          ><img
+            style="height: 1em; margin: 0; padding: 0"
+            src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"
+        /></a>
+        <a href="https://github.com/BlockCat/">
+          <img src="./img/github.png" style="height: 1em" />
+        </a>
+      </span>
+      <p>
+        Ik ben Zino Onomiwo.
+        <span style="font-size: 0.5em">
+          Niet de foto hierboven, dat is een willekeurige kat van wikimedia
+        </span>
+      </p>
+      <p>
+        Geboren en getogen in Nederland's Zoetermeer. Een mooie stad in
+        Zuid-Holland, waarin ik mijn eerste zoveel jaren heb doorgebracht. Over
+        het algemeen een goede tijd gehad hier, totdat ik student werd. Toen ik
+        student werd, verhuisde ik naar Utrecht.
+      </p>
+      <p>
+        In de tijdsperiode van <time>2014</time> tot <time>2020</time> heb ik
+        aan de Universiteit te Utrecht mijn Bachelor opleiding,
+        <i>Informatica</i>, en Master opleiding,
+        <i>Computing Science</i> afgerond. Hoewel ik mij gespecialiseerd heb in
+        <i>Algorithm Design and Analysis + Algorithmic Data analysis</i>, is
+        mijn Master Scriptie geschreven in de Operation Research richting.
+      </p>
+      <p>
+        Mijn Master Scriptie is gedaan bij de NS en is op de
+        <a
+          href="https://studenttheses.uu.nl/bitstream/handle/20.500.12932/37757/thesis_zino_onomiwo.pdf?sequence=1"
+          >UU website te bekijken</a
+        >. In het kort: Treinen moeten ergens onderhouden kunnen worden en
+        parkeren indien ze niet gebruikt worden. Dankzij een hoop fysieke
+        limitaties moet er een plan gemaakt worden dat beschrijft waar, wanneer
+        en hoe treinen zich moeten verplaatsen op het terrein. Helaas gaat er
+        wel eens iets fout, en als het fout is moet het plan bijgesteld worden.
+        De scriptie laat zien dat het gebruik van local search technieken een
+        oplossingsrichting kan bieden aan het herstel van een plan.
+      </p>
+    </section>
+    <section>
+      <h2>Hobby's</h2>
+      <article>
+        <h3>Computerspelletjes</h3>
+        <p>
+          Ik hou wel van computerspelletjes spelen. Mijn favoriet voor altijd
+          zal toch altijd Factorio zijn. Maar ik heb ook nog wel nostalgische
+          herinneringen aan EVE Online.
+        </p>
+      </article>
+      <article>
+        <h3>Software ontwikkeling!</h3>
+      </article>
+      <article>
+        <h3>Bakken en koekjes!!!</h3>
+        <p>Koekjes! :DD</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Projecten</h2>
+      <p>Ik programmeer!</p>
+      <div class="articles">
+        <article>
+          <h4>
+            <a href="https://github.com/BlockCat/bevy_highway_node_network">
+              <img src="./img/github.png" style="height: 1em" />
+              Implementation: Engineering Highway Hierarchies
+            </a>
+          </h4>
+          <img class="" src="./img/map.png" style="width: 100%" />
+
+          <figcaption>
+            <small
+              >A simple implementation of the excellent paper by Peper Sanders
+              and Dominik Schultes.</small
+            >
+          </figcaption>
+          <p>
+            This implementation generates highway hierarchies for the dutch road
+            network. It is written in the rust language and uses
+            <a href="https://github.com/bevyengine/bevy">Bevy</a>
+            for visualization and interaction.
+          </p>
+          <p>
+            This project uses data provided by the dutch
+            <a href="https://www.nationaalwegenbestand.nl/"
+              >Nationaal Wegenbestand</a
+            >
+            which contains most, if not all, roads found in the Netherlands.
+          </p>
+          <p>
+            ORTEC gave a presentation about Highway Hierarchies during my time
+            at university. Since then I have been interested in this approach
+            and it has been in the back of my mind since then, until now. I
+            liked implementing this paper, it gave me some useful insights. The
+            speed increase when switching to an adjacency list was a nice
+            surprise, I used to think that having an efficient algorithm was the
+            most important part, but an efficient data-structure will have
+            significant impact too.
+            <small
+              >And my usual graph implementation is RAM unfriendly :)</small
+            >
+          </p>
+        </article>
+        <article>
+          <h4>
+            <a href="https://github.com/BlockCat/CatZero">
+              <img src="./img/github.png" style="height: 1em" />
+              Implementation: AlphaZero
+            </a>
+          </h4>
+          <p>I think it works? I should just remake it (again) in python.</p>
+        </article>
+        <article>
+          <h4>
+            <a href="https://github.com/BlockCat/rust-sudoku-solver">
+              <img src="./img/github.png" style="height: 1em" />
+              Sudoku Solver
+            </a>
+          </h4>
+
+          <p>
+            Solves sudoku using a trivial algorithm created for graph-colouring
+            problem, which sudoku is. Also has ILP implementation using the Z3
+            solver.
+          </p>
+        </article>
+
+        <article>
+          <h4>
+            <a href="https://github.com/BlockCat/Kerktest">
+              <img src="./img/github.png" style="height: 1em" />
+              KerkTest
+            </a>
+          </h4>
+          <p>
+            The <a href="https://www.kerktest.nl/">Kerktest.nl</a> is made in
+            collaboration with friends from Leiden. Nowadays I would design the
+            website differently.
+          </p>
+        </article>
+        <article>
+          <h4>
+            <a href="https://github.com/BlockCat/unity_wfc">
+              <img src="./img/github.png" style="height: 1em" />
+              Wave Function Collapse
+            </a>
+          </h4>
+          <p>
+            An attempt to implement the wave function collapse algorithm, or
+            atleast what I understood from it. Which was having some cubes with
+            rules about which neighbours are or are not allowed, and then apply
+            some variant of graph-colouring to place the cubes where they are
+            allowed to be.
+          </p>
+        </article>
+        <article>
+          <h4>
+            <a href="https://github.com/BlockCat/eve_noice">
+              <img src="./img/github.png" style="height: 1em" />
+              EVE Noice
+            </a>
+          </h4>
+          <p>
+            An inventory system calculating profits and losses made in EVE
+            Online. Good times.
+          </p>
+        </article>
+        <article>
+          <h4>
+            <a href="https://github.com/BlockCat/bsp_unique_chess"
+              ><img src="./img/github.png" style="height: 1em" /> BSP unique
+              chess positions</a
+            >
+          </h4>
+          <p>
+            Calculates the amount of unique chess positions after
+            <code>n</code> moves. This program was made to run on the
+            <a href="https://userinfo.surfsara.nl/systems/cartesius">
+              Cartesius Supercomputer
+            </a>
+            in Amsterdam. I vaguely remember we could use around 1000 cores. Not
+            sure about you, but I find that pretty cool. I remember
+            <a href="https://en.wikipedia.org/wiki/Bulk_synchronous_parallel"
+              >BSP</a
+            >
+            being a kind of scatter gather framework.
+          </p>
+        </article>
+        <article>
+          <h4>
+            <a href="https://github.com/BlockCat/bsp_primegenerator"
+              ><img src="./img/github.png" style="height: 1em" /> BSP Prime
+              Generator</a
+            >
+          </h4>
+          <p>
+            Generate primes in parallel using BSP. It calculates some prime
+            numbers and then uses the Sieve of Eratosthenes to calculate the
+            prime numbers in parallel.
+          </p>
+        </article>
+      </div>
+    </section>
+    <section id="skills">
+      <h2>Werkvaardigheden</h2>
+      <p>Mijn voornaamste bezigheid is toch echt software ontwikkeling.</p>
+      <hr />
+      <details>
+        <summary>
+          PKN <br /><i>In <time datetime="2011-07-01">Juli 2017</time> </i>
+        </summary>
+        <article>
+          <p>
+            Als medewerker voor de PKN redactie, voornamelijk het overzetten van
+            data van de oude data naar de nieuwe data.
+          </p>
+        </article>
+      </details>
+      <hr />
+      <details>
+        <summary>
+          PKN <br /><i>In <time datetime="2016-09-01">September 2016</time> </i>
+        </summary>
+        <article>
+          <p>
+            Financieel medewerker. Invoeren en controle van financiele data van
+            gemeentes.
+          </p>
+        </article>
+      </details>
+      <hr />
+      <details>
+        <summary>
+          Student-assistent bij Utrecht university,<br />
+          <i>
+            van <time datetime="2017-04-15">april 2017</time> tot en met
+            <time datetime="2017-06-30">juni 2017</time>
+          </i>
+        </summary>
+        <article>
+          <p>
+            Student-assistent voor de Universiteit Utrecht, voor het vak:
+            Imperatief programeren.
+          </p>
+        </article>
+      </details>
+      <hr />
+      <details>
+        <summary>
+          Student-assistent bij Utrecht university, <br /><i>
+            van <time datetime="2018-04-15">april 2018</time> tot en met
+            <time datetime="2018-06-30">juni 2018</time>
+          </i>
+        </summary>
+        <article>
+          <p>
+            Student-assistent voor de Universiteit Utrecht, voor het vak:
+            Imperatief programeren.
+          </p>
+        </article>
+      </details>
+      <hr />
+      <details>
+        <summary>
+          Student-assistent bij Utrecht university,<br />
+          <i>
+            van <time datetime="2018-09-01">september 2018</time> tot en met
+            <time datetime="2019-01-31">januari 2019</time>
+          </i>
+        </summary>
+        <article>
+          <p>
+            Student-assistent voor de Universiteit Utrecht, voor het vak:
+            Graphics programeren.
+          </p>
+        </article>
+      </details>
+      <hr />
+      <details>
+        <summary>
+          Student-assistent bij Utrecht university, <br /><i>
+            van <time datetime="2019-09-01">september 2019</time> tot en met
+            <time datetime="2019-11-14">november 2019</time>
+          </i>
+        </summary>
+        <article>
+          <p>
+            Student-assistent voor de Universiteit Utrecht, voor het vak: Data
+            analyse en Retrieval.
+          </p>
+        </article>
+      </details>
+      <hr />
+      <details>
+        <summary>
+          Junior Java Developer bij Keylane <br /><i
+            >van <time>mei 2017</time> tot en met <time>september 2017</time></i
+          >
+        </summary>
+        <article>
+          <p>Er staat Java developer, maar het was toch echt sql.</p>
+        </article>
+      </details>
+      <hr />
+      <details>
+        <summary>
+          Voorzitter Webcie bij Ichthus Utrecht, <br /><i
+            >van <time>september 2020</time> tot en met <time>heden</time></i
+          >
+        </summary>
+        <article>
+          <p><a href="https://www.ichthusutrecht.nl">IchthusUtrecht.nl</a>!</p>
+        </article>
+      </details>
+      <hr />
+      <details>
+        <summary>
+          Medium Java Developer bij BKWI, <br /><i
+            >van <time>oktober 2020</time> tot en met <time>heden</time></i
+          >
+        </summary>
+      </details>
+      <hr />
+    </section>
+  </body>
+</html>
