@@ -1,0 +1,18 @@
+(
+    dimensions: (10, 4, 10),
+    connections: [
+        "air",
+        "roof",
+        "half-roof",
+        "block"
+    ],
+    tiles: [
+        "air.tile",
+        "straight.tile",
+        "corner.tile",
+        "block.tile",
+        "window.tile",
+        "inner_corner.tile"
+    ],
+
+)
